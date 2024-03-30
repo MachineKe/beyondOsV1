@@ -1,0 +1,100 @@
+/* WindowManager.css */
+
+.WindowManager {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Window {
+  position: absolute;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.WindowTitleBar {
+  background-color: #f0f0f0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+}
+
+.WindowTitleBar span {
+  font-weight: bold;
+}
+
+.window-content {
+    /* width: 100vw; 
+    height: 100vh; 
+    padding: 30px;
+    box-sizing: border-box;  */
+}
+.window-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.window-actions button:hover {
+  color: red; /* Change color on hover */
+}
+
+.window-actions button:active {
+  transform: translateY(1px); /* Add slight press effect */
+}
+
+/* Window states */
+.Window.minimized {
+  display: none;
+}
+
+.Window.maximized {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  z-index: 999; /* Ensure maximized window stays on top */
+}
+
+/* Dragging state */
+.Window.dragging {
+  pointer-events: none; /* Disable pointer events during dragging */
+}
+
+/* Resize handles */
+.ResizeHandle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  cursor: nwse-resize;
+}
+
+.ResizeHandle.TopLeft {
+  top: -5px;
+  left: -5px;
+}
+
+.ResizeHandle.TopRight {
+  top: -5px;
+  right: -5px;
+}
+
+.ResizeHandle.BottomLeft {
+  bottom: -5px;
+  left: -5px;
+}
+
+.ResizeHandle.BottomRight {
+  bottom: -5px;
+  right: -5px;
+}
