@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Taskbar from './Taskbar'; 
 import './WindowManager.css';
-import AppContent from './AppContent';
+import AppContent from './Desktop';
 import AppDrawer from './AppDrawer';
 function WindowManager() {
   const [windows, setWindows] = useState([]);
@@ -12,7 +12,8 @@ function WindowManager() {
     // No automatic window opening on load
   }, []);
 
-  const openWindow = (title, url,img) => {
+  const openWindow = (title, url, img) => {
+    setShowDrawer(false);
     const newWindow = {
       id: nextWindowId,
       title: title,
@@ -144,7 +145,9 @@ const [showDrawer, setShowDrawer] = useState(false);
             <span>{window.title}</span>
             <div className="window-actions">
               <button onClick={() => minimizeWindow(window.id)}>−</button>
-              <button onClick={() => maximizeWindow(window.id)}>□</button>
+              <button
+                // onClick={() => maximizeWindow(window.id)}
+              >□</button>
               <button onClick={() => closeWindow(window.id)}>✕</button>
             </div>
           </div>
