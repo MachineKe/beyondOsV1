@@ -5,7 +5,7 @@ import WindowManager from './Components/WindowManager';
 function App() {
   return (
     <div className="App">
-      <WindowManager />
+         <WindowManager />
     </div>
   );
 }

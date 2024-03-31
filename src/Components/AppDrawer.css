@@ -1,0 +1,44 @@
+/* AppDrawer.css */
+.app-drawer-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333333;
+  font-weight: bold;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+}
+
+.app-item {
+  text-align: center;
+}
+
+.app-item button {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app-item button:hover {
+  background-color: #e0e0e0;
+}
+
+.app-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.app-item span {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+}

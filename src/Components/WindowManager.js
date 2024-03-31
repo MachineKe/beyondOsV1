@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Taskbar from './Taskbar'; 
 import './WindowManager.css';
-
+import AppContent from './AppContent';
+import AppDrawer from './AppDrawer';
 function WindowManager() {
   const [windows, setWindows] = useState([]);
   const [nextWindowId, setNextWindowId] = useState(1);
@@ -11,17 +12,18 @@ function WindowManager() {
     // No automatic window opening on load
   }, []);
 
-  const openWindow = (title, url) => {
+  const openWindow = (title, url,img) => {
     const newWindow = {
       id: nextWindowId,
       title: title,
+      img: img,
       url: url,
       posX: 0,
       posY: 0,
       width: '100%',
-      height: '87vh',
+      height: '86vh',
       isMinimized: false,
-      isMaximized: true // Open the window maximized
+      isMaximized: true 
     };
     setNextWindowId(nextWindowId + 1);
     setWindows([...windows, newWindow]);
@@ -125,15 +127,17 @@ function WindowManager() {
     setResizing(null);
     document.removeEventListener('mousemove', handleResize);
   };
+const [showDrawer, setShowDrawer] = useState(false);
+// Function to toggle drawer visibility
+  const toggleDrawer = () => {
+    setShowDrawer(!showDrawer);
+  };
 
   return (
     <div className="WindowManager">
-      <Taskbar windows={windows} onMinimize={minimizeWindow} />
-      <div className="buttons-container">
-        <button onClick={() => openWindow("Krunker", "https://krunker.io")}>Open Krunker</button>
-        <button onClick={() => openWindow("BeyondOS", "https://beyondos.vercel.app")}>Open BeyondOS</button>
-        {/* Add more buttons for other websites */}
-      </div>
+      <Taskbar windows={windows} onMinimize={minimizeWindow} toggleDrawer={toggleDrawer}/>
+      {showDrawer && <AppDrawer openWindow={openWindow} />}
+      <AppContent openWindow={openWindow} />
       {windows.map(window => (
         <div key={window.id} className={`Window ${window.isMaximized ? 'maximized' : ''} ${window.isMinimized ? 'minimized' : ''}`} style={{ left: window.posX, top: window.posY, width: window.width, height: window.height }}>
           <div className="WindowTitleBar" onMouseDown={(e) => handleDragStart(e, window.id)}>
@@ -144,10 +148,8 @@ function WindowManager() {
               <button onClick={() => closeWindow(window.id)}>✕</button>
             </div>
           </div>
-          <div className="WindowContent">
-            {/* Render the content of the window here */}
-            <iframe src={window.url} title={window.title}
-              style={{ width: '100%', height: '100vh', border: 'none' }}
+          <div className="">
+            <iframe className='WindowContent' src={window.url} title={window.title}
             />
           </div>
         </div>
