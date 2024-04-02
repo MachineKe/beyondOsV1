@@ -5,8 +5,33 @@
     "img": "https://res.cloudinary.com/dmpposta9/image/upload/v1711882378/beyond/beyondOs/iuk0x9uzccpmyagsklnf.jpg"
   },
   {
-    "title": "BeyondOS",
-    "url": "https://beyondos.vercel.app",
-    "img": "https://res.cloudinary.com/dmpposta9/image/upload/v1711882379/beyond/beyondOs/mzo8hns5gljtjhfqgkaa.jpg"
+    "title": "Anything LLM",
+    "url": "https://useanything.com/",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/c_crop,g_auto,h_800,w_800/beyond/beyondOs/ewobprddqyxbbxu18t9r.jpg"
+  },
+  {
+    "title": "LM Studio",
+    "url": "https://lmstudio.ai/",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/c_crop,g_auto,h_400,w_400/e_improve:outdoor/beyond/beyondOs/mxngebprlxftwg47pi26.jpg"
+  },
+  {
+    "title": "Career Quest",
+    "url": "https:///beyondjobs.vercel.app",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/c_crop,g_auto,h_800,w_800/beyond/beyondOs/kck5wvb0lcsd98bukam7.jpg"
+  },
+    {
+    "title": "Terminal",
+    "url": "https://coderush.vercel.app/",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/v1711882372/beyond/beyondOs/g7bgx8ywvm2jprsha1ml.png"
+  },
+  {
+    "title": "Paint",
+    "url": "https://sketch.io/",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/e_improve:outdoor/beyond/beyondOs/sqerhj1zw81gb1n0djyc.jpg"
+  },
+  {
+    "title": "Image Editor",
+    "url": "https://pixlr.com/express/",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/c_crop,g_auto,h_800,w_800/beyond/beyondOs/zkidnma8mnjabrukonb0.jpg"
   }
 ]

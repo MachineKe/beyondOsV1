@@ -4,7 +4,8 @@ import './AppDrawer.css';
 import appData from '../Assets/apps.json'
 
 function AppDrawer({ openWindow }) {
-const [apps, setApps] = useState([]);
+  const [apps, setApps] = useState([]);
+
   useEffect(() => {
     setApps(appData); // Set the app data from the imported JSON file
   }, []);
