@@ -4,11 +4,6 @@
     "url": "https://krunker.io",
     "img": "https://res.cloudinary.com/dmpposta9/image/upload/v1711882378/beyond/beyondOs/iuk0x9uzccpmyagsklnf.jpg"
   },
-  {
-    "title": "Career Quest",
-    "url": "https:///beyondjobs.vercel.app",
-    "img": "https://res.cloudinary.com/dmpposta9/image/upload/c_crop,g_auto,h_800,w_800/beyond/beyondOs/kck5wvb0lcsd98bukam7.jpg"
-  },
     {
     "title": "Terminal",
     "url": "https://coderush.vercel.app/",
@@ -23,5 +18,10 @@
     "title": "Image Editor",
     "url": "https://pixlr.com/express/",
     "img": "https://res.cloudinary.com/dmpposta9/image/upload/c_crop,g_auto,h_800,w_800/beyond/beyondOs/zkidnma8mnjabrukonb0.jpg"
+  },
+  {
+    "title": "Beyond Commerce",
+    "url": "https://beyondcommerce.azurewebsites.net/",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/v1717812755/beyond/beyondOs/2-removebg-preview_xxz5il.png"
   }
 ]
