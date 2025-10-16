@@ -23,5 +23,15 @@
     "title": "Image Editor",
     "url": "https://pixlr.com/express/",
     "img": "https://res.cloudinary.com/dmpposta9/image/upload/c_crop,g_auto,h_800,w_800/beyond/beyondOs/zkidnma8mnjabrukonb0.jpg"
+  },
+  {
+    "title": "SPA ERP",
+    "url": "https://spa.beyondsoftwares.com",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/v1760627152/Spa%20System/spa_log_without_txt_2_ymholi.png"
+  },
+  {
+    "title": "E-Mazao",
+    "url": "https://e-mazao.samaritansystem.com",
+    "img": "https://res.cloudinary.com/dmpposta9/image/upload/v1759835283/e-mazao/Gemini_Generated_Image_bf0qtybf0qtybf0q_qke4pw.png"
   }
 ]
